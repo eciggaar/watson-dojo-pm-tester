@@ -39,7 +39,7 @@ This lab is designed to demonstrate how to use IBM Data Science Experience to bu
 ## Before you begin
 To be able do this lab a Bluemix account is necessary. If you don't have one yet -- or you did not complete the initial set up of your Bluemix account -- follow the steps below.
 
-Your account must have enough resources available for at least 1 application (256MB) and 3 services.
+Your account must have enough resources available for at least 1 application (128MB) and 4 services.
 
 ### Already registered and completed set-up
 
@@ -47,7 +47,7 @@ When you already registered and completed the initial set-up of your Bluemix acc
 
 ### Not registered
 
-Use Ctrl-click (or the equivalent action for your system) to open the [Sign Up for Bluemix](https://developer.ibm.com/sso/bmregistration) page in a separate tab. Fill in the form and click **Start your FREE Bluemix trial** to complete the registration. You will receive an activation mail in your inbox.
+Use Ctrl-click (or the equivalent action for your system) to open the [Sign Up for Bluemix](https://console.bluemix.net/registration/trial) page in a separate tab. Fill in the form and click **Start your FREE Bluemix trial** to complete the registration. You will receive an activation mail in your inbox.
 
 ### First time login
 
@@ -67,7 +67,7 @@ On the last page, click **I'm Ready** to complete the set up process.
 
 ### Create a space in Bluemix US region (if not already there)
 
-For the remainder of the lab it is **recommended** to work in the **US region** of Bluemix. For this, use Ctrl-click (or the equivalent for your system) to open the Bluemix dashboard. Click your account and choose **US South** as your active region.
+For the remainder of this lab we switch to the **US region** of Bluemix. For this, use Ctrl-click (or the equivalent for your system) to open the Bluemix dashboard. Click your account and choose **US South** as your active region.
 
 ![Select US region][5]
 
@@ -91,20 +91,20 @@ IBM Data Science Experience is an interactive, collaborative, cloud-based enviro
 
   2.  Click on **Sign Up** at the top right.
 
-  ![Sign Up](images/Picture1.png)
+  ![Sign Up][36]
 
   3. Click on **Sign in with your IBM id** and enter your Bluemix credentials.
 
-  ![Sign In](images/Picture2.png)
+  ![Sign In][37]
 
-  4. Follow the instructions to complete the sign up for IBM Data Science Experience. Please note that two Bluemix services will be created for you -- one Cloud Object Storage (SWIFT) and one Apache Spark. You should now see the Data Science Experience dashboard as shown below.
+  4. Follow the instructions to complete the sign up for IBM Data Science Experience. Note that two Bluemix services will be created for you -- a Cloud Object Storage service and an Apache Spark service. As soon as the 'Get Started' button is clickable, click it and you should be directed to the Data Science Experience dashboard as shown below.
 
   ![DSX dashboard][6]
 
 # Step 2: Deploy the testing application
 In this part of the lab you'll deploy the application that you will use later to test the predictive model that you create.
 
-  1. Click on the **Deploy to Bluemix** button below.
+  1. Use Ctrl-click on the **Deploy to Bluemix** button below to open the deployment process in a separate tab.
 
   [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/eciggaar/watson-dojo-pm-tester.git)
 
@@ -118,11 +118,11 @@ In this part of the lab you'll deploy the application that you will use later to
 
   5. A Toolchain and Delivery Pipeline will be created for you to pull the app out of Github and deploy it in to Bluemix. Click on the Delivery Pipeline tile to see the status of the deployment.
 
-  ![Toolchain](images/Picture6.png)
+  ![Toolchain][21]
 
   6. Wait for the **Deploy Stage** to complete successfully.
 
-  ![Deploy Stage](images/Picture7.png)
+  ![Deploy Stage][22]
 
 # Step 3: Create an instance of the Watson Machine Learning Service
 
@@ -142,7 +142,7 @@ In this part of the lab, you'll create an instance of the Watson Machine Learnin
 
   5. Click **Create**, followed by **Restage** when you’re prompted to restage your application.
 
-  ![Connect to Service](images/Picture10.png)
+  ![Connect to Service][23]]
 
   6. Go back to the Bluemix dashboard and wait until the app shows that it is running again.
 
@@ -162,7 +162,7 @@ In this part of the lab you will create a new project in IBM Data Science Experi
 
   4. Enter _Watson ML Integration_ as the project name and click **Create**.
 
-  5. On the right click on Browse to upload the data file you’ll use to create a predictive model.
+  5. On the right, in the Files section, click on Browse to upload the data file you’ll use to create a predictive model.
 
   ![Import Data][12]
 
@@ -174,19 +174,19 @@ In this part of the lab you will create a new project in IBM Data Science Experi
 
   8. Click on **Settings** for the project.
 
-  ![Settings](images/Picture15.png)
+  ![Settings][24]]
 
   9. Click on add associated service and select **Machine Learning**.
 
-  ![Associate Service](images/Picture16.png)
+  ![Associate Service][25]
 
   10. Choose your existing Machine Learning instance and click on **Select**.
 
-  ![Add Watson ML Service](images/Picture17.png)
+  ![Add Watson ML Service][26]
 
   11. Click on your browser’s Back button and verify that the Watson Machine Learning service is now listed as one of your **Associated Services**.
 
-  ![Associated Services](images/Picture18.png)
+  ![Associated Services][27]
 
   12. Leave the browser tab open for later.
 
@@ -198,11 +198,11 @@ In this part of the lab you’ll save the credentials for your Watson Machine Le
 
   2. Click on your Watson Machine Learning instance under **Services**.
 
-  ![Save Credentials](images/Picture19.png)
+  ![Save Credentials][28]
 
   3. Click on **Service credentials** and then on **View credentials** to see the credentials.
 
-  ![View Credentials](images/Picture20.png)
+  ![View Credentials][29]
 
   4. Save the username and password to a text file on your machine. You’ll need this information later in your Jupyter notebook.
 
@@ -235,7 +235,7 @@ In this part of the lab you will run the Jupyter Notebook code creating a predic
 
   2. Click on the **Find and Add** data icon -- see step 1 in diagram below -- and then select **Insert to code** under the file **patientdataV6.csv**. This is step 2 in diagram below. Finally select **Insert Credentials** -- which is step 3 in diagram below.
 
-  ![Insert Credentials Step 2](images/Picture24.png)
+  ![Insert Credentials Step 2][30]
 
   3. Your Object Storage credentials should now be in the cell. Ensure the variable is `credentials_1`.
 
@@ -243,7 +243,7 @@ In this part of the lab you will run the Jupyter Notebook code creating a predic
 
   4. Click on the **Run** icon to run the code in the cell.
 
-  ![Run Notebook](images/Picture26.png)
+  ![Run Notebook][31]
 
   5. Move your cursor to each code cell and run the code in it. Read the comments for each cell to understand what the code is doing. **Important** when the code in a cell is still running, the label to the left changes to **In [\*]**:.
   Do **not** continue to the next cell until the code is finished running.
@@ -278,9 +278,9 @@ In this part of the lab you’ll deploy the model you saved by running the Pytho
 
 ![Create Deployment Step 3][20]
 
-7. Restart the Node.js Web App. Return to your Bluemix Dashboard and select the restart icon to restart the web application.
+7. Restart the Node.js Web App. For this, return to your Bluemix Dashboard and select the restart icon to restart the web application.
 
-![Restart WebApp][21]
+![Restart WebApp][32]
 
 
 ## Step 9: Test the deployed Model
@@ -289,13 +289,13 @@ In this part of the lab you’ll test the deployed model with the Node.js applic
 
 1. Click on the application URL to open the application in a separate tab.
 
-![Test Deployed Model](images/Picture31.png)
+![Test Deployed Model][33]
 
 3. When the application appears click on **Score now** to test the scoring model with the default values.  
 
 4. Verify that the model predicts that there is a risk of heart failure for the patient with these medical characteristics.
 
-![Score](images/Picture32.png)
+![Score][34]
 
 5. **Click Close**. Run the app again with the following parameters.
 
@@ -303,7 +303,7 @@ In this part of the lab you’ll test the deployed model with the Node.js applic
 
 6. Verify that the model predicts that there is not a risk of heart failure for the patient with these medical characteristics.
 
-![Score](images/Picture34.png)
+![Score][35]]
 
 Congratulations, you successfully created a predictive model in Apache Spark and deployed and tested it using the Watson Machine Learning Service in Bluemix :smiley:!!
 
@@ -334,3 +334,20 @@ Congratulations, you successfully created a predictive model in Apache Spark and
 [18]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/create-deployment1.png?raw=true
 [19]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/create-deployment2.png?raw=true
 [20]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/create-deployment3.png?raw=true
+[21]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/toolchain.png?raw=true
+[22]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/deploy-stage.png?raw=true
+[23]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/restage-app.png?raw=true
+[24]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/settings.png?raw=true
+[25]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/add-associated-service.png?raw=true
+[26]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/choose-ml-service.png?raw=true
+[27]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/associated-services.png?raw=true
+[28]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/services-overview.png?raw=true
+[29]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/ml-credentials.png?raw=true
+[30]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/insert-credentials2.png?raw=true
+[31]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/run-notebook.png?raw=true
+[32]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/restart-app.png?raw=true
+[33]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/open-app.png?raw=true
+[34]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/failure-yes.png?raw=true
+[35]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/failure-no.png?raw=true
+[36]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/dsx-signup.png?raw=true
+[37]: https://github.com/eciggaar/watson-dojo-pm-tester/blob/master/images/use-existing-id.png?raw=true
