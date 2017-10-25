@@ -122,6 +122,20 @@ In this part of the lab, you'll create an instance of the Watson Machine Learnin
 
   ![Overview DSX services and test app][10]
 
+## Step 3: Save the credentials for your Watson Machine Learning Service
+
+In this part of the lab you’ll save the credentials for your Watson Machine Learning instance so you can use it later in your code.
+
+  1. Click on your Watson Machine Learning instance under **Services**.
+
+  ![Save Credentials][28]
+
+  2. Click on **Service credentials** and then on **View credentials** to see the credentials.
+
+  ![View Credentials][29]
+
+  3. Save the username and password to a text file on your machine. You’ll need this information later in your Jupyter notebook.
+
 ### Download the sample patient data
 
 Use Ctrl-click (or the equivalent action for your system) to open the <a href="https://ibm.box.com/v/patientdataV6" target=download>patientdataV6.csv</a> CSV file in a separate tab. Click **Download** to download this file to your own device.
@@ -130,7 +144,7 @@ Use Ctrl-click (or the equivalent action for your system) to open the <a href="h
 
 Congrats, you're now ready to start your data science experience :smiley:!!
 
-# Step 3: Sign up for IBM Data Science Experience
+# Step 4: Sign up for IBM Data Science Experience
 
 IBM Data Science Experience is an interactive, collaborative, cloud-based environment where data scientists can use multiple tools to activate their insights. In this part of the lab you will sign up for a 30-day trial of IBM Data Science Experience.
 
@@ -148,7 +162,7 @@ IBM Data Science Experience is an interactive, collaborative, cloud-based enviro
 
   ![DSX dashboard][6]
 
-## Step 4: Create a project in IBM Data Science Experience and bind it to your Watson Machine Learning service instance
+## Step 5: Create a project in IBM Data Science Experience and bind it to your Watson Machine Learning service instance
 
 In this part of the lab you will create a new project in IBM Data Science Experience and bind it to your instance of the Watson Machine Learning service.
 
@@ -185,22 +199,6 @@ In this part of the lab you will create a new project in IBM Data Science Experi
   ![Associated Services][27]
 
   10. Leave the browser tab open for later.
-
-## Step 5: Save the credentials for your Watson Machine Learning Service
-
-In this part of the lab you’ll save the credentials for your Watson Machine Learning instance so you can use it later in your code.
-
-  1. In a different browser tab go to [http://console.bluemix.net](http://console.bluemix.net) and log in to the Dashboard.
-
-  2. Click on your Watson Machine Learning instance under **Services**.
-
-  ![Save Credentials][28]
-
-  3. Click on **Service credentials** and then on **View credentials** to see the credentials.
-
-  ![View Credentials][29]
-
-  4. Save the username and password to a text file on your machine. You’ll need this information later in your Jupyter notebook.
 
 ## Step 6: Create a notebook in IBM Data Science Experience
 
