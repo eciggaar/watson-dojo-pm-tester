@@ -39,7 +39,7 @@ This lab is designed to demonstrate how to use IBM Data Science Experience to bu
 ## Before you begin
 To be able do this lab a Bluemix account is necessary. If you don't have one yet -- or you did not complete the initial set up of your Bluemix account -- follow the steps below.
 
-Your account must have enough resources available for at least 1 application (128MB) and 4 services.
+Your account must have enough resources available for at least 1 application (128MB) and 5 services.
 
 ### Already registered and completed set-up
 
@@ -75,33 +75,7 @@ If you are all OK, you get the dashboard. Otherwise, you will be asked to create
 
 ![Create space in US][4]
 
-### Download the sample patient data
-
-Use Ctrl-click (or the equivalent action for your system) to open the <a href="https://ibm.box.com/v/patientdataV6" target=download>patientdataV6.csv</a> CSV file in a separate tab. Click **Download** to download this file to your own device.
-
-  ![Download CSV][14]
-
-Congrats, you're now ready to start your data science experience :smiley:!!
-
-# Step 1: Sign up for IBM Data Science Experience
-
-IBM Data Science Experience is an interactive, collaborative, cloud-based environment where data scientists can use multiple tools to activate their insights. In this part of the lab you will sign up for a 30-day trial of IBM Data Science Experience.
-
-  1.  In a web browser navigate to [https://datascience.ibm.com](https://datascience.ibm.com).
-
-  2.  Click on **Sign Up** at the top right.
-
-  ![Sign Up][36]
-
-  3. Click on **Sign in with your IBM id** and enter your Bluemix credentials.
-
-  ![Sign In][37]
-
-  4. Follow the instructions to complete the sign up for IBM Data Science Experience. Note that two Bluemix services will be created for you -- a Cloud Object Storage service and an Apache Spark service. As soon as the 'Get Started' button is clickable, click it and you should be directed to the Data Science Experience dashboard as shown below.
-
-  ![DSX dashboard][6]
-
-# Step 2: Deploy the testing application
+# Step 1: Deploy the testing application
 In this part of the lab you'll deploy the application that you will use later to test the predictive model that you create.
 
   1. Use Ctrl-click on the **Deploy to Bluemix** button below to open the deployment process in a separate tab.
@@ -124,7 +98,7 @@ In this part of the lab you'll deploy the application that you will use later to
 
   ![Deploy Stage][22]
 
-# Step 3: Create an instance of the Watson Machine Learning Service
+# Step 2: Create an instance of the Watson Machine Learning Service
 
 In this part of the lab, you'll create an instance of the Watson Machine Learning service and bind it to the application that you created in Step 2.
 
@@ -148,47 +122,69 @@ In this part of the lab, you'll create an instance of the Watson Machine Learnin
 
   ![Overview DSX services and test app][10]
 
+### Download the sample patient data
+
+Use Ctrl-click (or the equivalent action for your system) to open the <a href="https://ibm.box.com/v/patientdataV6" target=download>patientdataV6.csv</a> CSV file in a separate tab. Click **Download** to download this file to your own device.
+
+  ![Download CSV][14]
+
+Congrats, you're now ready to start your data science experience :smiley:!!
+
+# Step 3: Sign up for IBM Data Science Experience
+
+IBM Data Science Experience is an interactive, collaborative, cloud-based environment where data scientists can use multiple tools to activate their insights. In this part of the lab you will sign up for a 30-day trial of IBM Data Science Experience.
+
+  1.  In a web browser navigate to [https://datascience.ibm.com](https://datascience.ibm.com).
+
+  2.  Click on **Sign Up** at the top right.
+
+  ![Sign Up][36]
+
+  3. Click on **Sign in with your IBM id** and enter your Bluemix credentials.
+
+  ![Sign In][37]
+
+  4. Follow the instructions to complete the sign up for IBM Data Science Experience. Note that three Bluemix services will be created for you -- a Cloud Object Storage service, an Apache Spark service and a Data Science Experience service. As soon as the 'Get Started' button is clickable, click it and you should be directed to the Data Science Experience dashboard as shown below.
+
+  ![DSX dashboard][6]
+
 ## Step 4: Create a project in IBM Data Science Experience and bind it to your Watson Machine Learning service instance
 
 In this part of the lab you will create a new project in IBM Data Science Experience and bind it to your instance of the Watson Machine Learning service.
 
-  1. In a new browser tab go to [https://datascience.ibm.com](https://datascience.ibm.com).
-
-  2. Click on **Sign In** at the top of the page.
-
-  3. From the dashboard, click on **Create new** from the top-right. From the drop-down menu select **Project**.
+  1. From the dashboard, click on **Create new** from the top-right. From the drop-down menu select **Project**.
 
   ![Create New Project][11]
 
-  4. Enter _Watson ML Integration_ as the project name and click **Create**. Leave the other settings on their default value.
+  2. Enter _Watson ML Integration_ as the project name and click **Create**. Leave the other settings on their default value.
 
-  5. On the right, in the Files section, click on Browse to upload the data file you’ll use to create a predictive model.
+  3. On the right, in the Files section, click on Browse to upload the data file you’ll use to create a predictive model.
 
   ![Import Data][12]
 
-  6. On your laptop, browse to the location where you downloaded the file **patientdataV6.csv** in the section [Download patient data](#download-patient-data) of this lab. Select the file and click on Open (or the equivalent action for your operating system).
+  4. On your laptop, browse to the location where you downloaded the file **patientdataV6.csv** in the section [Download patient data](#download-patient-data) of this lab. Select the file and click on Open (or the equivalent action for your operating system).
 
-  7. Once successfully uploaded, the file should appear in the **Data Assets** section.
+  5. Once successfully uploaded, the file should appear in the **Data Assets** section.
 
   ![Data Assets][13]
 
-  8. Click on **Settings** for the project.
+  6. Click on **Settings** for the project.
 
   ![Settings][24]
 
-  9. Click on add associated service and select **Machine Learning**.
+  7. Click on add associated service and select **Machine Learning**.
 
   ![Associate Service][25]
 
-  10. Choose your existing Machine Learning instance and click on **Select**.
+  8. Choose your existing Machine Learning instance and click on **Select**.
 
   ![Add Watson ML Service][26]
 
-  11. Click on your browser’s Back button and verify that the Watson Machine Learning service is now listed as one of your **Associated Services**.
+  9. Click on your browser’s Back button and verify that the Watson Machine Learning service is now listed as one of your **Associated Services**.
 
   ![Associated Services][27]
 
-  12. Leave the browser tab open for later.
+  10. Leave the browser tab open for later.
 
 ## Step 5: Save the credentials for your Watson Machine Learning Service
 
