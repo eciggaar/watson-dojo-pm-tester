@@ -84,7 +84,7 @@ In this part of the lab you'll deploy the application that you will use later to
 
   2. Log in into Bluemix with your credentials by clicking on the **Log in** link at the top right.
 
-  3. Make sure to deploy the application to the same region and space as where the *Apache Spark* and *Cloud Object Storage* services were created when you signed up for IBM Data Science Experience. Please take note of this space as later in this lab the Watson Machine Learning service needs to be deployed into the same space.
+  3. Make sure to deploy the application to the **US South** region and space you created above. Please take note of this space as later in this lab the Watson Machine Learning service needs to be deployed into the same space.
 
   4. Click on **Deploy** to deploy the application.
 
@@ -108,11 +108,11 @@ In this part of the lab, you'll create an instance of the Watson Machine Learnin
 
   ![Watson ML Service][8]
 
-  3. In the **Connect to** drop-down, select the application that you deployed earlier in Step 2 of this lab.
+  3. In the **Connect to** drop-down, select the application that you deployed earlier in Step 1 of this lab.
 
   ![Connect to Service][9]
 
-  4. Verify this service is being created in the same space as the app in Step 2.
+  4. Verify this service is being created in the same space as the app in Step 1.
 
   5. Click **Create**, followed by **Restage** when you’re prompted to restage your application.
 
@@ -204,7 +204,7 @@ In this part of the lab you will create a new project in IBM Data Science Experi
 
 In this part of the lab you’ll create a Jupyter notebook and import the code to create a predictive model.
 
-  1. If you don't have your newly created Project open, first click **Projects -> View All Projects**, and then select your newly created project from Step 4. Next, in the Data Science Experience browser tab click on **Overview** and then click **add notebooks**.
+  1. If you don't have your newly created Project open, first click **Projects -> View All Projects**, and then select your newly created project from Step 5. Next, in the Data Science Experience browser tab click on **Overview** and then click **add notebooks**.
 
   ![Add Notebook][15]
 
