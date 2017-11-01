@@ -100,7 +100,7 @@ In this part of the lab you'll deploy the application that you will use later to
 
 # Step 2: Create an instance of the Watson Machine Learning Service
 
-In this part of the lab, you'll create an instance of the Watson Machine Learning service and bind it to the application that you created in Step 2.
+In this part of the lab, you'll create an instance of the Watson Machine Learning service and bind it to the application that you created in Step 1.
 
   1. In your browser go to the Bluemix Dashboard and click **Catalog**.
 
