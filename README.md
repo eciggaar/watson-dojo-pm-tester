@@ -223,15 +223,15 @@ In this part of the lab you’ll create a Jupyter notebook and import the code t
 
 In this part of the lab you will run the Jupyter Notebook code creating a predictive model, and save it in the Watson Machine Learning Service.
 
-  1. Place your cursor in the first code block in the notebook.
+  1. Place your cursor in the first code block in the notebook, above the existing text.
 
   ![Insert Credentials Step 1](images/Picture23.png)
 
-  2. Click on the **Find and Add** data icon -- see step 1 in diagram below -- and then select **Insert to code** under the file **patientdataV6.csv**. This is step 2 in diagram below. Finally select **Insert Credentials** -- which is step 3 in diagram below.
+  2. Click on the **Find and Add** data icon and then select **Insert to code** under the file **patientdataV6.csv**. Finally select **Insert SparkSession DataFrame** -- as shown in the diagram.
 
   ![Insert Credentials Step 2][30]
 
-  3. Your Object Storage credentials should now be in the cell. Make sure to rename the variable to `credentials_1`.
+  3. Your Object Storage dataframe should now be in the cell. Make sure to rename the variable to `df_data`. Also, paste in the option `inferSchema` as shown below.
 
   ![Insert Credentials Step 3](images/Picture25.png)
 
